@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9a exercises</title>
+  </head>
+  <body>
+    <button>9a</button>
+    <button class="js-9button" onclick="
+    changeButton();">9b</button>
+    <br>
+    <p class=>-</p>
+    <br>
+    <button class="js-heads" onclick="
+    chooseSide('heads')">Heads</button>
+    <button class="js-tails"onclick="
+    chooseSide('tails')">Tails</button>
+    <p class="js-paragraph">Result here</p>
+
+    <input class="js-input" placeholder="I'm a placeholder" onkeydown="
+    inputFunctionKeydown(event)">
+    <button onclick="
+    inputFunction()">Submit</button>
+    <p class="js-paragraph2">Your name is...</p>
+
+
+    <script>
+      console.log(document.querySelector('button'));
+      console.log(document.querySelector('button').innerHTML);
+      console.log(document.querySelector('.js-9button'));
+      console.log(document.querySelector('.js-9button').innerHTML);
+
+      function changeButton() {
+        const buttonElement = document.querySelector('.js-9button')
+
+        if (buttonElement.innerHTML === '9b') {
+          buttonElement.innerHTML = '9b done!'
+        } else {
+          buttonElement.innerHTML = '9b';
+        }
+      }
+
+      function chooseSide(side) {
+        let chosenSide = '';
+        let paragraphElement = document.querySelector('.js-paragraph');
+
+        if (side === 'heads') {
+          chosenSide = 'heads';
+          console.log(side);
+          paragraphElement.innerHTML = 'You chose: Heads'
+        } else if (side === 'tails'){
+          chosenSide = 'tails';
+          console.log(side);
+          paragraphElement.innerHTML = 'You chose: Tails'
+        }
+      }
+      function inputFunction() {
+        const inputElement = document.querySelector('.js-input');
+        let text = inputElement.value;
+
+        document.querySelector('.js-paragraph2').innerHTML = `Your name is: ${text}`;
+      }
+      function inputFunctionKeydown(event) {
+        const inputElement = document.querySelector('.js-input');
+        let text = inputElement.value;
+        if (event.key === 'Enter') {
+          document.querySelector('.js-paragraph2').innerHTML = `Your name is: ${text}`;
+        }
+      }
+    </script>
+  </body>
+</html>
