@@ -1,27 +1,89 @@
-h1 {
-  font-family: 'Courier New', Courier, monospace;
+@media (min-width: 601px) {
+  body {
+    font-family: Overpass;
+    background-color: hsl(216, 12%, 8%);
+  }
+  .main-div {
+    background-color: hsl(213, 19%, 18%);
+    width: 25vw;
+    min-height: 350px;
+    margin: 0px auto;
+    padding: 0px 0px 0px px;
+    
+  }
+  .star-image {
+    background-color: hsl(197, 5%, 25%);
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+
+  }
+  .thankyou-image {
+  }
+  .error-paragraph {
+    color: red;
+    font-size: 23px;
+    font-weight: 700;
+    width: 85%;
+    margin: 5px auto;
+  }
+  .paragraph1 {
+    color: hsl(217, 12%, 63%);
+  }
+  .paragraph4 {
+    background-color: hsl(200, 15%, 15%);
+    color: hsl(25, 97%, 53%);
+    width: 200px;
+    margin: 0px auto;
+  }
+  .buttonparagraph {
+    width: 90%;
+    text-align: center;
+  }
+  .rating-button {
+    background-color: hsl(197, 5%, 25%);
+    color: hsl(217, 12%, 63%);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    margin: 0px auto;
+    cursor: pointer;
+  }
+  .rating-button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .rating-button:focus {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .submit-button {
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+    padding: 0px 100px;
+    border: none;
+    border-radius: 25px;
+  }
+  .submit-button:hover {
+    background-color: hsl(0, 0%, 100%);
+  }
+  .attribution {
+    color: blanchedalmond;
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }
-.js-button1 {
-  background-color: hsl(213, 19%, 18%);
-}
-.js-button2 {
-  background-color: hsl(213, 19%, 18%);
-}
-.js-button3 {
-  background-color: red;
-}
-.js-button4 {
-  background-color: red;
-}
-.js-button5 {
-  background-color: green;
-}
-.js-button6 {
-  background-color: red;
-}
-.attribution {
-  font-size: 11px; text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+@media (max-width: 600px){
 }

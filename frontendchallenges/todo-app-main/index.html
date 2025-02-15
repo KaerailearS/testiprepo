@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+<!--Todo list app with dark/light theme switch, a drag&drop feature to re-order the list and filters to show/hide certain list items
+
+Basic Todo list from SuperSimpleDev only has one header/paragraph, two div elements; input and main todo list
+Adding to that, theme changer on top right, # items left on bottom left, filters bottom middle, and a "clear completed" on bottom right. Drag and drop hint below the main div.
+
+    Add new todos to the list -- done via input
+    Mark todos as complete -- done via "check-button", added via javascript with relevant todo
+    Delete todos from the list -- done via "delete-button", added via javascript with relevant todo
+    Filter by all/active/complete todos -- bottom bar -- add/remove relevant class or visibility
+    Clear all completed todos -- bottom bar
+    Toggle light and dark mode -- top right, adds/removes relevant class to alter visual appearance
+    View the optimal layout for the app depending on their device's screen size -- heres hoping
+    See hover states for all interactive elements on the page -- element hovers
+    Bonus: Drag and drop to reorder items on the list -- studying this
+    Bonus: Build this project as a full-stack application -- ????
+
+
+-->
+  <section class="input-container">
+    <div class="todo-input">
+      <input id="add-todo" class="checkbox" type="checkbox"/>
+      <input id="add-todo-input" class="todo-input" placeholder="Create a new todo...">
+
+    </div>
+  </section>
+
+  <section class="list-container">
+    <!-- blank until added via javascript-->
+  </section>
+
+  <section class="bottom-bar-container">
+    <div class="number-items-left">
+      <p id="items-left"> <!--items left will be added via javascript--></p>
+    </div>
+    <div class="filter-buttons">
+      <button class="filter-button is-active">All</button>
+      <button class="filter-button">Active</button>
+      <button class="filter-button">Completed</button>
+    </div>
+    <div class="remove-completed">
+      <button class="remove-completed-button">Clear Completed</button>
+    </div>
+  </section>
+  <p id="dragdrop-paragraph" class="drag-drop-hint">Drag and drop to reorder list</p>
+
+  <!-- # items left-  add via javascript - (Add dynamic number) items left--> 
+
+  <!-- filters at the bottom of the main div(separate div with no margin between?) - All Active Completed Clear Completed-->
+
+  <!-- drag&drop hint below main div - Drag and drop to reorder list--> 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Taavi</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

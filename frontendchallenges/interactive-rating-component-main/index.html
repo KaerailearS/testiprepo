@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--
+    Basic description; basic "Interactive Rating Component" - A small "rating"-page with a header, a paragraph, five different rating value buttons and a sixth button to submit chosen rating. After submitting a rating, the page will change to a "Thank you"-page, with a different image, header and paragraph, with no buttons.
+    -->
+    <!--
+    Main div;
+    one visible picture - switches with page swap
+    empty/invisible paragraph - added with page swap
+    header and paragraph - switched with page swap
+    div container for buttons - hidden with page swap
+    -->
+    <div class="main-div js-rating-div">
+      <img class="star-image js-image1" src="./images/icon-star.svg">
+      <img class="thankyou-image js-image2" hidden src="images/illustration-thank-you.svg">
+      <p class="paragraph2 js-paragraph2" hidden></p>
+      <h1 class="header js-header">How did we do?</h1>
+      <p class="paragraph1 js-paragraph1">
+        Please let us know how we did with your support request.  All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      <!-- if no chosen rating, error pops up-->
+      <p class="error-paragraph js-error-paragraph"></p>
+      <!--div container for buttons-->
+      <div class="button-container js-button-container">
+      <button class="rating-button js-button1">1</button>
+      <button class="rating-button js-button2">2</button>
+      <button class="rating-button js-button3">3</button>
+      <button class="rating-button js-button4">4</button>
+      <button class="rating-button js-button5">5</button>
+      <br>
+      <button class="submit-button js-submit-button">Submit</button>
+      </div>
+    </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
-  <title>Frontend Mentor | Interactive rating component</title>
+    <!--
+    Originally there was two "states" listed, and you were supposed to change between these two states, but I went with the approach of transforming one page to include both states, instead of using two differring states.
+    -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
-</head>
-<body>
-
-  <!-- Rating state start -->
-  <img src="./images/icon-star.svg">
-  <h1>How did we do?</h1>
-
-  <p>Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
-
-
-  <button class="js-button1">1</button>
-  <button class="js-button2">2</button>
-  <button class="js-button3">3</button>
-  <button class="js-button4">4</button>
-  <button class="js-button5">5</button>
-  <br>
-  <button class="js-button6">Submit</button>
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selectedout of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Taavi</a>.
-  </div>
-  <script>
-
-  </script>
-</body>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Taavi</a>.
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
 </html>

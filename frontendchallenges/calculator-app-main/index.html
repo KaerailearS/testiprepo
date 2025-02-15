@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+  <!--basic layout:
+  top left: "calc" top right: theme selector with 3 different settings
+  underneath: input/result line
+  button division:
+  "7" "8" "9" "DEL"
+  "4" "5" "6" "+"
+  "1" "2" "3" "-"
+  "." "0" "/" "x"
+  "RESET" "=(equal)"-->
+  <div class="header-div js-div1">
+    <p class="calc-paragraph">calc</p>
+    <div class="theme-selector js-theme-selector">
+      <input type="radio" name="theme" value="theme-1" checked>
+      <input type="radio" name="theme" value="theme-2">
+      <input type="radio" name="theme" value="theme-3">
+    </div>
+  </div>
+  <div class="div-middle js-div2">
+    <p class="display js-display"></p>
+  </div>
+  <div class="div-bottom js-button-container">
+    <button class="js-button js-input-button">7</button>
+    <button class="js-button js-input-button">8</button>
+    <button class="js-button js-input-button">9</button>
+    <button class="js-button js-del-button">DEL</button>
+    <button class="js-button js-input-button">4</button>
+    <button class="js-button js-input-button">5</button>
+    <button class="js-button js-input-button">6</button>
+    <button class="js-button js-input-button">+</button>
+    <button class="js-button js-input-button">1</button>
+    <button class="js-button js-input-button">2</button>
+    <button class="js-button js-input-button">3</button>
+    <button class="js-button js-input-button">-</button>
+    <button class="js-button js-input-button">.</button>
+    <button class="js-button js-input-button">0</button>
+    <button class="js-button js-input-button">/</button>
+    <button class="js-button js-input-button">*</button>
+    <button class="js-button js-reset-button">RESET</button>
+    <button class="js-button js-equals-button">=</button>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Taavi</a>.
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html>

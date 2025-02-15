@@ -1,0 +1,57 @@
+@media (min-width: 601px) {
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: hsl(0, 0%, 100%);
+    width: 40vw;
+    max-width: 400px;
+    margin: 0px auto;
+  }
+  .theme-1 {
+    background-color: white;
+    color: black;
+  }
+  .theme-2 {
+    background-color: black;
+    color: white;
+  }
+  .theme-3 {
+    background-color: darkblue;
+    color: lightblue;
+  }
+  .header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .display {
+    width: 250px;
+    text-align: center;
+    min-height: 18px;
+    background-color: red;
+    margin: 10px auto;
+  }
+  .div-bottom {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+  }
+  .input-button {
+    padding: 10px 20px;
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 0%);
+
+  }
+  .bottom-button {
+    grid-column: span 2;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
