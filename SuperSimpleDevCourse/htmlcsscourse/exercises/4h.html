@@ -1,0 +1,67 @@
+<!--Exercises 4h to 4k -  Recreate the following designs using the Box Model; -->
+<!-- 4h - Pagination, 4i - Stretch on hover, 4j - 3D click, 4k - Margin and Padding together --->
+ <style>
+  .button-4h {
+    margin: 0px 5px;
+    padding: 8px 8px;
+  }
+  a {
+    margin: 0px 3px;
+  }
+  .button-4i {
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: padding 0.5s;
+  }
+  .button-4i:hover {
+    padding: 30px 50px;
+  }
+  .button-4j {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .button-4j:active {
+    margin: 5px 0px 0px 5px;
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+  }
+  .button-4k {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    margin: 0px 5px;
+    transition: padding 0.5s;
+  }
+  .button-4k:hover {
+    padding: 10px 30px;
+  }
+ </style>
+<button class="button-4h">Back</button>
+<a href="">1</a>
+<a href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<button>Next</button>
+<br>
+<br>
+<br>
+<button class="button-4i">Stretch</button>
+<br>
+<br>
+<br>
+<button class="button-4j">Shadow</button>
+<br>
+<br>
+<br>
+<button class="button-4k">One</button>
+<button class="button-4k">Two</button>
+<button class="button-4k">Three</button>
