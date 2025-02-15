@@ -1,16 +1,26 @@
 <!--Basics of CSS-->
-<!--Lesson 2: made buttons with basic style - Lesson 3: made hover states, active states and shadows.-->
+<!--
+  Lesson 2: made buttons with basic style
+  Lesson 3: made hover states, active states and shadows.
+  Lesson 4: Box model stuff, margin, padding, vertical alignment and using devtools to copy exact colour from webpage
+  Exercise 4f - Update the "Tweet" button to use padding instead of height/width
+  Exercise 4g - Use the DevTools to get the exact colour for the Subscribe Button
+-->
 <style>
   .subscribe-button {
-    background-color: rgb(200, 0, 0);
+    background-color: rgb(204, 0, 0);
     color: white;
     border: none;
-    height: 36px;
-    width: 105px;
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
     transition: opacity 0.15s;
+    vertical-align: top;
   }
   .subscribe-button:hover {
     opacity: 0.8;
@@ -21,32 +31,34 @@
   .join-button {
     background-color: white;
     color: rgb(41, 118, 211);
-    border: 1px solid rgb(41, 118, 211);
-    height: 36px;
-    width: 62px;
+    border: 1px solid rgb(6, 95, 212);
     border-radius: 2px;
     cursor: pointer;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
     transition: background-color 0.15s, color 0.15s;
   }
   .join-button:hover {
-    background-color: rgb(41, 118, 211);
+    background-color: rgb(6, 95, 212);
     color: white;
   }
   .join-button:active {
     opacity: 0.7;
   }
   .tweet-button {
-    background-color: rgb(2, 158, 255);
+    background-color: rgb(29, 155, 240);
     color: white;
     border: none;
-    height: 36px;
-    width: 74px;
     border-radius: 18px;
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
     margin: 0px 0px 0px 8px;
     transition: box-shadow 0.15s;
+    vertical-align: top;
+    padding: 9px 16px 9px 16px;
   }
   .tweet-button:hover {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
