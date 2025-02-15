@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- coin flip game with localStorage to save score-->
+<html>
+  <head>
+    <title>Boolean Exercise 2</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <button onclick="
+    playGame('heads');
+
+    ">Heads</button>
+    <button onclick="
+    playGame('tails');
+    ">Tails</button>
+
+    <script>
+      let score = JSON.parse(localStorage.getItem('score')) || {
+        wins: 0,
+        losses: 0
+      }
+      function playGame(guess) {
+        const number = Math.random();
+        let result = '';
+        console.log(number);
+        console.log(`You guessed ${guess}`);
+        if (number <= 0.5) {
+          result = 'heads';
+          console.log(result);
+        } else if (number >= 0.5) {
+          result = 'tails'
+          console.log(result);
+        }
+
+        if(guess === result){
+          score.wins += 1;
+          console.log(`You win! Wins: ${score.wins} Losses: ${score.losses}`);
+        } else if(guess !== result){
+          score.losses += 1;
+          console.log(`You lose! Wins: ${score.wins} Losses: ${score.losses}`);
+        }
+        localStorage.setItem('score', JSON.stringify(score));
+/*        result === guess ? console.log(`You win! Wins: ${score.wins} Losses: ${score.losses}`) : console.log(`You lose! Wins: ${score.wins} Losses: ${score.losses}`);
+*/    }
+    </script>
+  </body>
+</html>
+
+
+
+
+

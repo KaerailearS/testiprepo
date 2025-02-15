@@ -1,0 +1,194 @@
+<!-- 3a and onwards! -->
+<!-- 3a - use CSS to add hover and active states to the buttons from the previous exercises -->
+<!-- Something that has come a bit evident comparing 2a to 3a, the sizes of the buttons arent uniform; I did a close-up comparison between my button and the picture of the button from the video, to as closely match them as possible for 2a, and now in 3a the button sizes are different due to different pictures. I won't change the sizes at all here, unless its a specific effect of a hover or active state. exercises for 3a & onward also didnt include specific colours, so I'll just make them look kind of similar rather than a perfect copy-->
+<style>
+  .button-uber {
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 110px;
+    width: 330px;
+    font-size: 38px;
+    transition: opacity 0.2s;
+  }
+  .button-uber:hover {
+    opacity: 0.8;
+  }
+  .button-amazon {
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+    background-color: rgb(255, 216, 20);
+    border: none;
+    height: 100px;
+    width: 550px;
+    border-radius: 50px;
+    font-size: 50px;
+    transition: background-color 0.2s;
+  }
+  .button-amazon:hover {
+    background-color: rgb(255, 196, 0);
+  }
+  .button-github {
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+    background-color: rgb(46, 164, 79);
+    color: white;
+    width: 310px;
+    height: 115px;
+    font-size: 45px;
+    border: none;
+    border-radius: 15px;
+    transition: box-shadow 0.2s;
+  }
+  .button-github:hover {
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .button-bootstrap1 {
+    margin: 0px 25px 10px 0px;
+    cursor: pointer;
+    background-color: rgb(121, 82, 179);
+    color: white;
+    width: 332px;
+    height: 112px;
+    font-size: 40px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+  }
+  .button-bootstrap1:hover {
+    background-color: rgb(86, 55, 133);
+  }
+  .button-bootstrap2 {
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+    background-color:white;
+    color: rgb(108, 117, 125);
+    width: 310px;
+    height: 112px;
+    font-size: 40px;
+    border: 2px solid rgb(108, 117, 125);
+    border-radius: 10px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  .button-bootstrap2:hover {
+    background-color: rgb(108, 117, 125);
+    color: white;
+  }
+  .button-linkedin1 {
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+    background-color:rgb(10, 102, 194);
+    color: white;
+    width: 775px;
+    height: 122px;
+    font-size: 55px;
+    border: 2px solid rgb(108, 117, 125);
+    border-radius: 61px;
+    transition: background-color 0.2s;
+  }
+  .button-linkedin1:hover {
+    background-color: rgb(11, 60, 109);
+  }
+  .button-linkedin2 {
+    margin: 0px 0px 10px 35px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(10, 102, 194);
+    width: 260px;
+    height: 115px;
+    font-size: 50px;
+    border: 3px solid rgb(10, 102, 194);
+    border-radius: 60px;
+    transition: background-color 0.2s, border;
+  }
+  .button-linkedin2:hover {
+    border: 4px solid rgb(10, 102, 194);
+    background-color: rgba(0, 0, 255, 0.09);
+  }
+  .amazon-link {
+    color: rgb(0, 113, 133);
+    font-size: 50px;
+    transition: color 0.2s;
+  }
+  .amazon-link:hover {
+    color: rgb(223, 138, 70);
+  }
+  .amazon-product {
+    font-weight: bold;
+    font-size: 76px;
+  }
+  .price-stock {
+    color: rgb(0, 118, 0);
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .delivery-text {
+    font-size: 50px;
+  }
+  .button-amazon2 {
+    cursor: pointer;
+    background-color: rgb(255, 216, 20);
+    font-size: 50px;
+    height: 90px;
+    width: 355px;
+    border: none;
+    border-radius: 45px;
+    margin: 0px 35px 0px 0px;
+  }
+  .button-amazon2:hover {
+    background-color: rgb(202, 176, 42);
+  }
+  .button-amazon2:active {
+    opacity: 0.5;
+  }
+  .button-amazon3 {
+    cursor: pointer;
+    background-color: rgb(255, 164, 28);
+    font-size: 50px;
+    height: 90px;
+    width: 355px;
+    border: none;
+    border-radius: 45px;
+  }
+  .button-amazon3:hover {
+    background-color: rgb(211, 128, 4);
+
+  }
+  .button-amazon3:active {
+    opacity: 0.5;
+  }
+</style>
+<button class="button-uber">Request now</button>
+<br>
+<button class="button-amazon">Add to cart</button>
+<br>
+<button class="button-github">Sign up</button>
+<br>
+<button class="button-bootstrap1">Get started</button>
+<button class="button-bootstrap2">Download</button>
+<br>
+<button class="button-linkedin1">Apply on company website</button>
+<button class="button-linkedin2">Save</button>
+<br>
+
+
+<a href="https://www.amazon.com/" class="amazon-link">
+  Back to Amazon
+</a>
+  <p class="amazon-product">
+  Nike Black Running Shoes
+</p>
+  <p class="price-stock">
+  $39 - in stock.
+</p>
+  <p class="delivery-text">
+  Free delivery tomorrow.
+</p>
+  <button class="button-amazon2">
+  Add to Cart
+</button>
+  <button class="button-amazon3">
+  Buy now
+</button>

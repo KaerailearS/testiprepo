@@ -1,0 +1,4 @@
+This folder includes the HTML files for the projects done with the guidance of SuperSimpleDev's JavaScript youtube tutorial.
+Originally in the video HTML files weren't separated into their own folder, but rather were located in the "main-folder" which also contained the folders for scripts and styles, but I personally wanted to move the HTMLs into their own folder, since there are so many of them.
+When it comes to the exercise projects, ie. "4a", "4b" etc., originally I started with making a new file for each, but later started doing multiple in the same file, simply commenting out the previous code and leaving the instruction / goal visible.
+Comments for early exercises/projects added later on, and as such are much more barebones/unspecific
