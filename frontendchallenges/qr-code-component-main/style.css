@@ -5,16 +5,17 @@ body {
   align-items: center;
   height: 80vh;
   margin: 0;
+  font-size: 15px;
+  font-family: Outfit;
 }
 .main-container {
-  width: 90%;  /* Adjust width to fit different screen sizes */
-  max-width: 350px;  /* Prevent it from becoming too large */
+  width: 90%;
+  max-width: 350px;  /* limit maximum width to keep the container size static */
   background: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 15px;
-  text-align: center;  /* Centers inline elements like text and images */
+  text-align: center;
 }
-
 .qr-code-image {
   width: 98%;  /* Adjust image width relative to container */
   max-width: 350px;  /* Prevent image from becoming too large */
@@ -22,6 +23,16 @@ body {
   display: block;  /* Allows margin auto to work */
   margin: 0 auto;  /* Centers horizontally */
   border-radius: 15px;
+}
+.main-text {
+  font-weight: 600;
+  margin: 20px auto;
+  max-width: 180px;
+}
+.sub-text {
+  margin: 0 auto;
+  max-width: 250px;
+  color: hsl(216, 15%, 48%);
 }
 .attribution {
   font-size: 11px;
