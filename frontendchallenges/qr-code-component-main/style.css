@@ -1,32 +1,32 @@
-@media(max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-  .main-container {
-    max-width: 90%;
-    margin: 0px auto;
-    background-color: white;
-    border: none;
-    border-radius: 25px;
-  }
-  .qr-code-image {
-    width: 90%;
-    margin: 10px auto;
-  }
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+body {
+  display: grid;
+  background-color: hsl(212, 45%, 89%);
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
 }
-@media(min-width: 601px) {
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+.main-container {
+  width: 90%;  /* Adjust width to fit different screen sizes */
+  max-width: 350px;  /* Prevent it from becoming too large */
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;  /* Centers inline elements like text and images */
+}
+
+.qr-code-image {
+  width: 98%;  /* Adjust image width relative to container */
+  max-width: 350px;  /* Prevent image from becoming too large */
+  height: auto;  /* Maintain aspect ratio */
+  display: block;  /* Allows margin auto to work */
+  margin: 0 auto;  /* Centers horizontally */
+  border-radius: 15px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
